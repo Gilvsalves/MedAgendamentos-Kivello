@@ -9,3 +9,7 @@ npm install
 Se o Ionic CLI ainda não estiver disponível globalmente no sistema da pessoa, é necessário instalá-lo, execute:
 
 npm install -g @ionic/cli
+
+Para rodar o projeto, execute:
+
+ionic serve
