@@ -1,0 +1,96 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">cadastro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div id="container">
+  
+  <strong class="title">Cadastro de Pacientes</strong>
+  <p>Preencha o formulário para cadastro no sistema:</p>
+
+  <div id="container2">
+
+    <ion-item class="input-item">
+      <ion-input
+        label="NOME"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="Digite o nome aqui"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-input
+        label="SOBRENOME"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="Digite o sobrenome aqui"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-input
+        label="CPF"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="000.000.000-00"
+        maxlength="14"
+        (ionInput)="formatCPF($event)"
+        [(ngModel)]="cpf"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-input
+        label="Telefone"
+        labelPlacement="stacked"
+        type="tel"
+        placeholder="(00) 00000-0000"
+        maxlength="15"
+        (ionInput)="formatPhone($event)"
+        [(ngModel)]="telefone">
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-input
+        label="E-mail"
+        labelPlacement="stacked"
+        type="email"
+        placeholder="exemplo@dominio.com"
+        [(ngModel)]="email"
+        (ionBlur)="validateEmail()">
+      </ion-input>
+      <ion-note *ngIf="emailInvalid" color="danger">E-mail inválido</ion-note>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-input
+        label="SENHA"
+        labelPlacement="stacked"
+        type="password"
+        placeholder="******************"
+      >
+      <ion-input-password-toggle color="light" slot="end"></ion-input-password-toggle>
+      </ion-input>
+    </ion-item>
+
+    <ion-button color="light" id="button-cadastrar">
+      <span class="button-text">Cadastrar</span>
+    </ion-button>
+  </div>
+
+</div>
+
+</ion-content>

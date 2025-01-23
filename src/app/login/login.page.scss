@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 
   gap: 16px; /* Espaçamento entre os elementos dentro do container */
@@ -41,7 +41,7 @@ p {
 }
 
 #container a {
-  text-decoration: none;
+    color: white;
 }
 
 //--------------------------------------------------------------------------------------
@@ -99,13 +99,31 @@ ion-toolbar ion-button ion-icon {
 
 //--------------------------------------------------------------------
 #container2 ion-button {
-
   --color: white; /* Texto branca */
-  --border-color: white; /* Borda branca */
 }
 
 #container2 ion-button:hover {
   --background: #f1f1f180; /* Fundo levemente cinza no hover */
+}
+
+//---------------------------------------------------------------------
+
+/* Garante que os inputs tenham o mesmo tamanho */
+.input-item {
+  width: 100%; /* Faz com que todos os inputs ocupem a largura total */
+  max-width: 400px; /* Define uma largura máxima para manter o layout consistente */
+  margin: 8px auto; /* Adiciona espaçamento entre os campos */
+}
+
+.custom-input {
+  --padding-start: 16px; /* Garante espaçamento interno consistente */
+  --padding-end: 16px; /* Garante consistência no lado direito */
+  --background: #ffffff; /* Fundo branco para uniformidade */
+}
+
+/* Ajuste específico para o toggle */
+ion-input-password-toggle {
+  margin-right: 8px; /* Adiciona espaçamento para ajustar alinhamento */
 }
 
 //--------------------------------------------------------------------

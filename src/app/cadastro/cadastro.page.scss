@@ -1,0 +1,130 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70%;
+    transform: translateY(-50%);
+  
+    gap: 16px; /* Espaçamento entre os elementos dentro do container */
+    padding: 16px; /* Espaçamento interno */
+  }
+  
+  #container .header-image {
+    max-width: 150px; /* Define a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja um bloco */
+    margin: 0 auto 50px; /* Centraliza a imagem e adiciona margem inferior */
+    border-radius: 50%; /* Torna a imagem redonda */
+  }
+  
+  .title {
+    margin-bottom: 8px; /* Espaçamento entre o título e o texto */
+  }
+  p {
+    margin-bottom: 16px; /* Espaçamento entre o texto e os botões */
+  }
+  
+  #container strong {
+    font-size: 30px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #ffffff;
+  
+    margin: 30px;
+  }
+  
+  #container a {
+      color: white;
+  }
+  
+  //--------------------------------------------------------------------------------------
+  
+  #container2 {
+    display: flex; /* Configura a div como flex container */
+    flex-direction: column; /* Alinha os botões em uma coluna */
+    //flex-wrap: wrap; /* Permite quebra de linha para telas menores */
+    justify-content: center; /* Centraliza os botões */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 16px; /* Espaçamento entre os botões */
+    padding: 16px; /* Adiciona espaçamento interno ao container */
+  }
+  
+  ion-button {
+    flex: 1 1 auto; /* Os botões se ajustam dinamicamente ao espaço disponível */
+    text-align: center;
+    max-width: 200px; /* Define uma largura máxima para os botões */
+    
+  }
+  
+  .button-text {
+    margin-left: 8px; /* Espaçamento entre o texto e o ícone */
+  }
+  
+  
+  // ----------------------------------------------------------------------------
+  /* Estilo padrão: aplica apenas aos botões dentro de ion-toolbar */
+  ion-toolbar ion-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilo padrão para ícones dentro de ion-toolbar */
+  ion-toolbar ion-button ion-icon {
+    font-size: 24px; /* Tamanho padrão */
+  }
+  
+  /* Esconde o texto e ajusta o ícone em telas pequenas */
+  @media (max-width: 768px) {
+    ion-toolbar ion-button ion-icon {
+      font-size: 32px; /* Tamanho maior para mobile */
+    }
+  
+    ion-toolbar ion-button .button-text {
+      display: none; /* Esconde o texto */
+    }
+  
+    ion-toolbar ion-button {
+      --padding-start: 0;
+      --padding-end: 0;
+      justify-content: center; /* Centraliza o ícone */
+    }
+  }
+  
+  //--------------------------------------------------------------------
+  #container2 ion-button {
+    --color: white; /* Texto branca */
+  }
+  
+  #container2 ion-button:hover {
+    --background: #f1f1f180; /* Fundo levemente cinza no hover */
+  }
+  
+  //---------------------------------------------------------------------
+  
+  /* Garante que os inputs tenham o mesmo tamanho */
+  .input-item {
+    width: 100%; /* Faz com que todos os inputs ocupem a largura total */
+    max-width: 400px; /* Define uma largura máxima para manter o layout consistente */
+    margin: 8px auto; /* Adiciona espaçamento entre os campos */
+  }
+  
+  .custom-input {
+    --padding-start: 16px; /* Garante espaçamento interno consistente */
+    --padding-end: 16px; /* Garante consistência no lado direito */
+    --background: #ffffff; /* Fundo branco para uniformidade */
+  }
+  
+  /* Ajuste específico para o toggle */
+  ion-input-password-toggle {
+    margin-right: 8px; /* Adiciona espaçamento para ajustar alinhamento */
+  }
+  
+  //--------------------------------------------------------------------
+  

@@ -1,8 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      
     </ion-title>
+    
+    <ion-buttons slot="end">
+      
+      <ion-button id="telefone" (click)="onMobileClick('(81)3333-0000 / (81)98888-1111')">
+        <ion-icon slot="start" name="call-outline"></ion-icon>
+        <span class="button-text">(81)3333-0000 / (81)98888-1111</span>
+      </ion-button>
+      <ion-button id="login" (click)="goToLogin()">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <span class="button-text">ÁREA DO CLIENTE</span>
+      </ion-button>
+      
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +27,21 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div>
+      <img src="assets/fotoMed.png" alt="Imagem Descrição" class="header-image">
+    </div>
+    
+    <strong class="title">NOME DA EMPRESA</strong>
+    <p>Escolha uma opção abaixo:</p>
+
+    <div id="container2">
+      <ion-button fill="outline" id="button-atendimento" >
+        <span class="button-text">Agendar Atendimento</span>
+      </ion-button>
+      
+      <ion-button fill="outline" id="button-agendarmed">
+        <span class="button-text">Agendar por médico</span>
+      </ion-button>
+    </div>
   </div>
 </ion-content>
