@@ -2,7 +2,7 @@
 Sistema de Agendamento de Consultas em Ionic Angular
 
 ### Execução:
-No Terminal/Powershell, para instalar todas as dependências listadas no arquivo package.json na pasta node_modules execute :
+No Terminal/Powershell, para instalar todas as dependências listadas no arquivo package.json na pasta node_modules, execute :
 
 npm install
 
