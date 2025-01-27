@@ -23,7 +23,8 @@ export const addUser = (req, res) => {
         console.error('Erro ao inserir paciente:', err);
         res.status(500).send('Erro ao inserir paciente');
         } else {
-        res.status(201).send('Paciente cadastrado com sucesso');
+        //res.status(201).send('Paciente cadastrado com sucesso');
+        res.status(201).json({ message: 'Paciente Confirmado!' });
         }
     });
 }

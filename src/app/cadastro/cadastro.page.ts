@@ -101,9 +101,9 @@ export class CadastroPage implements OnInit {
       console.log('Dados enviados:', formData);//VAMOS VER
 
       this.http.post('http://localhost:8800/api/pacientes', formData).subscribe({
-        next: (response: any) => {
-          console.log('Resposta do servidor:', response);
-          if (response && response.message === 'Paciente cadastrado com sucesso') {
+        next: (res: any) => {
+          console.log('Resposta do servidor:', res);
+          if (res && res.message === 'Paciente Confirmado!') {
             alert('Cadastro realizado com sucesso!');
             this.pacienteForm.reset();
           } else {
