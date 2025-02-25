@@ -13,3 +13,11 @@ npm install -g @ionic/cli
 Para rodar o projeto, execute:
 
 ionic serve
+
+### Edição:
+
+npm install @ionic/angular @angular/core --force
+
+ionic generate page login
+
+ionic generate service novapasta/nomedoservico
